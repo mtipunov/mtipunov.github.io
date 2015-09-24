@@ -11,26 +11,26 @@
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-21164476-4', 'auto');
-    ga('send', 'pageview');</script></head><body><div class="person" itemscope="" itemtype="http://schema.org/Person"><div class="images is-animated with-right-rotation"><div class="mask"></div></div><div class="content-position" ng-view></div><div class="languages"><a class="lang" ng-class="{'is-current': locale.lang == 'ru'}" href="#/ru" hreflang="ru" rel="alternate"><span class="text">Русский</span></a> <a class="lang" ng-class="{'is-current': locale.lang == 'en'}" href="#/en" hreflang="en" rel="alternate"><span class="text">English</span></a></div></div><script src="js/main.min.js"></script><script type="text/ng-template" id="/main.html"><div class="content">
+    ga('send', 'pageview');</script></head><body><div class="person" itemscope="" itemtype="http://schema.org/Person"><div class="images is-animated with-right-rotation"><div class="mask"></div></div><div class="content-position" ng-view></div><div class="languages"><a class="lang" ng-class="{'is-current': locale.lang == 'ru'}" href="#/ru" hreflang="ru" rel="alternate"><span class="text">Русский</span></a> <a class="lang" ng-class="{'is-current': locale.lang == 'en'}" href="#/en" hreflang="en" rel="alternate"><span class="text">English</span></a><br><a href="http://tipunov.com">&copy; Anton Tipunov</a></div></div><script src="js/main.min.js"></script><script type="text/ng-template" id="/main.html"><div class="content">
         <h1 class="name">
             <span itemprop="givenName">{{profile.firstName}}</span>
             <span itemprop="familyName">{{profile.lastName}}</span>
         </h1>
         <ul class="contacts list">
             <li class="piece email">
-                <a class="link" href="mailto:anton@tipunov.com">
+                <a class="link" href="mailto:maikl@tipunov.com">
                     <div class="icon"></div>
                     <div class="label">{{profile.email.label}}</div>
                     <div class="value" itemprop="email">{{profile.email.value}}</div>
                 </a>
             </li>
             <li class="piece location">
-                <a class="link" href="https://maps.google.com/maps?q=Belarus,+Minsk">
+                <a class="link" href="https://www.google.com/maps/place/Belarus+Zhgun'">
                     <div class="icon"></div>
                     <div class="label">{{profile.location.label}}</div>
                     <div class="value" itemprop="address" itemscope=""
                          itemtype="http://schema.org/PostalAddress">
-                        <span itemprop="addressLocality">{{profile.location.value.locality}}</span>,
+                        <span itemprop="addressLocality">{{profile.location.value.locality}}</span>
                         <div itemprop="addressCountry">{{profile.location.value.country}}</div>
                     </div>
                 </a>
